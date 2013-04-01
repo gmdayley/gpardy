@@ -1,0 +1,9 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+    <g:HTMLPanel>
+        <ul>
+            <li><span>Play Sounds: </span><g:CheckBox ui:field="playSounds"/></li>
+            <li><span>Timer Duration: </span><g:TextBox ui:field="timerDuration"/></li>
+        </ul>
+    </g:HTMLPanel>
+</ui:UiBinder>

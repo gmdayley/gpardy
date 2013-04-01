@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<EditTextPreference
+			android:name="Gpardy Host"
+			android:summary="The host running the GPardy game"
+			android:defaultValue="g-pardy.appspot.com"
+			android:title="Gpardy Host"
+			android:key="host"/>
+
+</PreferenceScreen>

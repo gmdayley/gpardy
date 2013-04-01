@@ -1,0 +1,10 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+    <g:HTMLPanel styleName="mobile-wrapper">
+        <div class="startgame-container-m">
+            <h1>Gpardy!</h1>
+            <g:Image url="images/buzzer.png" ui:field="button" styleName="buzzer"/>
+            <h2>Press the button already</h2>
+        </div>
+    </g:HTMLPanel>
+</ui:UiBinder>

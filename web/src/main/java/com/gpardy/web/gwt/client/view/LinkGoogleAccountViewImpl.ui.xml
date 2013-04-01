@@ -1,0 +1,16 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+    <g:HTMLPanel styleName="startgame-container">
+        <h1>Gpardy!</h1>
+        <div class="link-account">
+            <div>
+                Gpardy uses Google Spreadsheets to store game data.  To create a new game, user create a Google spreadsheet
+                that has categories, answers and questions.  In order to access these spreadsheets you must authorize our
+                application to link to your Google account.
+            </div>
+
+            <a href="/oauth/r" class="menubutton">Ok</a>
+        </div>
+
+    </g:HTMLPanel>
+</ui:UiBinder>

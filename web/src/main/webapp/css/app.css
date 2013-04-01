@@ -1,0 +1,167 @@
+body {
+    font-family: 'Play', serif;
+    background: -webkit-radial-gradient(black 15%, transparent 16%) 0 0, -webkit-radial-gradient(black 15%, transparent 16%) 8px 8px, -webkit-radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 0 1px, -webkit-radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 8px 9px;
+    background-color: #282828;
+    background-size: 16px 16px;
+    overflow: hidden;
+}
+
+.startgame-container {
+    position: relative;
+    margin: auto;
+    width: 800px;
+    top: 10%;
+    text-align: center;
+}
+
+.startgame-container h1 {
+    font-family: 'Permanent Marker', serif;
+    font-size: 104px;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 20px #000000;
+    text-align: center;
+    margin: 0px;
+}
+
+.mobile-wrapper{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+}
+.startgame-container-m {
+    position: relative;
+    margin: auto;
+    width: 320px;
+    height: 460px;
+    top: 10%;
+    text-align: center;
+    background: white;
+}
+
+.startgame-container-m h1 {
+    font-family: 'Permanent Marker', serif;
+    font-size: 32px;
+    color: black;
+    text-shadow: 0px 0px 20px #ccc;
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 93px;
+}
+
+.startgame-container-m h2 {
+    font-family: 'Permanent Marker', serif;
+    font-size: 18px;
+    color: black;
+    text-shadow: 0px 0px 20px #AAA;
+    text-align: center;
+    margin: 0px;
+    position: absolute;
+    bottom: 10%;
+    width: 320px;
+}
+
+.whitebg {
+    background: white;
+}
+
+a.menubutton {
+    -webkit-transition: width .3s ease-in-out;
+
+    width: 400px;
+    display: inline-block;
+    border-radius: 5px;
+
+    background: #007bf6; /* Old browsers */
+    background: -moz-linear-gradient(top, #007bf6 0%, #0a70d6 44%, #1062b4 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #007bf6), color-stop(44%, #0a70d6), color-stop(100%, #1062b4)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #007bf6 0%, #0a70d6 44%, #1062b4 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #007bf6 0%, #0a70d6 44%, #1062b4 100%); /* Opera11.10+ */
+    background: -ms-linear-gradient(top, #007bf6 0%, #0a70d6 44%, #1062b4 100%); /* IE10+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#007bf6', endColorstr = '#1062b4', GradientType = 0); /* IE6-9 */
+    background: linear-gradient(top, #007bf6 0%, #0a70d6 44%, #1062b4 100%); /* W3C */
+
+    padding: 15px 25px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 10px #000000;
+    font-family: 'Bowlby One SC', serif;
+    font-size: 28px;
+
+    text-decoration: none;
+
+    color: black;
+
+    /*color: #ccc;*/
+}
+
+a.menubutton:hover {
+    -webkit-transition: width .3s ease-in-out;
+    width: 450px;
+
+    background: #8fc400; /* Old browsers */
+    background: -moz-linear-gradient(top, #8fc400 0%, #8fc400 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #8fc400), color-stop(100%, #8fc400)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #8fc400 0%, #8fc400 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #8fc400 0%, #8fc400 100%); /* Opera11.10+ */
+    background: -ms-linear-gradient(top, #8fc400 0%, #8fc400 100%); /* IE10+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#8fc400', endColorstr = '#8fc400', GradientType = 0); /* IE6-9 */
+    background: linear-gradient(top, #8fc400 0%, #8fc400 100%); /* W3C */
+
+    cursor: pointer;
+}
+
+a.menubutton:active {
+    color: black;
+}
+
+a.menubutton:visited {
+    color: black;
+}
+
+/* Link account */
+
+.link-account {
+    font-size: 24px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px #000000;
+    padding: 30px;
+}
+
+.link-account a {
+    margin-top: 35px;
+}
+
+.startgame-container input {
+    width: 450px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+#soundmanager-debug {
+    /* SM2 debug container (optional, use or customize this as you like - makes in-browser debug output more useable) */
+    position: fixed;
+    _position: absolute;
+    right: 1em;
+    bottom: 1em;
+    width: 50em;
+    height: 18em;
+    overflow: auto;
+    background: #fff;
+    margin: 1em;
+    padding: 1em;
+    border: 1px solid #999;
+    font-family: monaco, "lucida console", verdana, tahoma, "sans serif";
+    font-size: x-small;
+    line-height: 1.5em;
+    opacity: 0.9;
+    filter: alpha(opacity = 90);
+    z-index: 1000;
+}
+
+/** Game Board **/

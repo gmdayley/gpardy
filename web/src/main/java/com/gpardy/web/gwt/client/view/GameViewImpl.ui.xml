@@ -1,0 +1,52 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'
+             xmlns:gwt="urn:import:com.gpardy.web.gwt.client.ui">
+    <g:HTMLPanel styleName="container">
+         <g:HTMLPanel styleName="menubar">
+            <h1>GPARDY!</h1>
+             <span>
+                 <g:Anchor ui:field="optionsAnchor">Options</g:Anchor>
+                 <g:Anchor ui:field="resetAnchor">Reset</g:Anchor>
+                 <!--<g:Anchor ui:field="muteAnchor">Mute</g:Anchor>-->
+
+             </span>
+        </g:HTMLPanel>
+
+        <!--<g:Label ui:field="gameName" styleName="gameName"/>-->
+        <g:FlowPanel ui:field="board" styleName="gameboard"/>
+
+        <g:FlowPanel ui:field="questionPanel" styleName="question">
+            <!--<g:Label ui:field="questionText" styleName="text"/>-->
+
+            <g:FlowPanel ui:field="questionContent" styleName="question-content">
+
+            </g:FlowPanel>
+
+            <gwt:QuestionTimer visible="false" ui:field="questionTimer"/>
+
+            <g:FlowPanel styleName="buzzin" ui:field="buzzinPanel">
+                <g:SimplePanel ui:field="buzzinBoxText"/>
+                <g:Button ui:field="correctButton" text="Right" styleName="right"/>
+                <g:Button ui:field="incorrectButton" text="Wrong" styleName="wrong"/>
+                <g:Button ui:field="dismissButton" text="Dismiss" styleName="dismiss"/>
+            </g:FlowPanel>
+
+            <g:InlineLabel ui:field="currentQuestionLabel" styleName="currentQuestion"/>
+        </g:FlowPanel>
+
+        <g:HTMLPanel ui:field="scoresPanel" styleName="scores">
+            <ul ui:field="scoreList"></ul>
+        </g:HTMLPanel>
+
+        <g:FlowPanel ui:field="gameOverPanel" styleName="gameover">
+            <g:Label styleName="gameover-text">Game Over</g:Label>
+            <g:Label styleName="gameover-winner" ui:field="winnerLabel"></g:Label>
+            <g:Label styleName="gameover-winner-text">Congratulations you are the winner of Gpardy!</g:Label>
+        </g:FlowPanel>
+
+         <g:InlineLabel ui:field="gameNameCode" styleName="game-code"></g:InlineLabel>
+
+
+
+    </g:HTMLPanel>
+</ui:UiBinder>

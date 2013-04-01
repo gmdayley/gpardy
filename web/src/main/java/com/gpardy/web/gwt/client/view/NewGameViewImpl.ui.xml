@@ -1,0 +1,8 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+    <g:HTMLPanel styleName="startgame-container">
+        <h1>Gpardy!</h1>
+        <!--<g:TextBox ui:field="gameNameTextBox"/>-->
+        <g:FlowPanel ui:field="spreadsheetPanel"/>
+    </g:HTMLPanel>
+</ui:UiBinder>
